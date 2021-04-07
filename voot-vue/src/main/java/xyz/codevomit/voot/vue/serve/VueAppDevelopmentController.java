@@ -12,12 +12,12 @@ public class VueAppDevelopmentController {
     @RequestMapping(path = {"/voot-vue/**"})
     public RedirectView home(){
 
-        return new RedirectView("/voot-vue/index.html");
+        return new RedirectView("/voot-vue/main.html");
     }
 
-    @RequestMapping("/voot-vue/index.html")
+    @RequestMapping("/voot-vue/main.html")
     public String index(){
 
-        return "/index.html";
+        return "/main.html";
     }
 }
