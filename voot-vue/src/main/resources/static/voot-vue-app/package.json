@@ -10,7 +10,11 @@
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0-beta3",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.6"
+    "vue-router": "^4.0.6",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^3.0.0-3"
   },
   "devDependencies": {
     "@vue/cli-service": "~4.5.0",
