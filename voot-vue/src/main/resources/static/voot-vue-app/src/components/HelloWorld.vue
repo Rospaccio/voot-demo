@@ -1,9 +1,8 @@
 <template>
-  <div class="hello">
+  <div class="container">
     <h1>{{ msg }}</h1>
     <p>
-      Voot: a handy Spring Boot application template with an unopinionated
-      configurable Vue.js front end
+      {{ $t("misc.desc_1") }}
     </p>
     <p class="alert alert-info">
       <i class="fas fa-cogs"></i>
@@ -11,7 +10,7 @@
       <i class="fas fa-cogs"></i>
     </p>
 
-    <div>
+    <div class="row">
       <router-link to="/voot-vue/diag">
         <button class="btn btn-success">
           Click here to see how Vue Router works
@@ -22,11 +21,13 @@
 </template>
 
 <script>
+import { Dictionaries } from "../main.js";
+
 export default {
   name: "HelloWorld",
   props: {
     msg: String,
-  },
+  }
 };
 </script>
 

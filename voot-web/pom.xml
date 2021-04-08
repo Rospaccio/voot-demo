@@ -22,6 +22,7 @@
 			<groupId>xyz.codevomit</groupId>
 			<artifactId>voot-vue</artifactId>
 			<version>1.0</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
