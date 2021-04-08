@@ -1,21 +1,35 @@
 package xyz.codevomit.voot.vue.serve;
 
-import org.springframework.stereotype.Controller;
+import org.apache.commons.io.IOUtils;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
-@Controller
+import javax.servlet.http.HttpServletResponse;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+
+@RestController
 public class VueAppDevelopmentController {
 
-    @RequestMapping(path = {"/voot-vue/**"})
-    public RedirectView home(){
+//    @RequestMapping("/voot-vue/**")
+//    public void redirectToMain(HttpServletResponse response) {
+//        try {
+//            response.sendRedirect("/voot-vue");
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 
-        return new RedirectView("/voot-vue/main.html");
-    }
-
-    @RequestMapping("/voot-vue/main.html")
-    public String index(){
-
-        return "/main.html";
+    @RequestMapping(path = {"/voot-vue"})
+    public ResponseEntity<String> home() {
+        InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream("static/main.html");
+        try {
+            String pageContent = IOUtils.toString(resourceAsStream, StandardCharsets.UTF_8);
+            return ResponseEntity.ok(pageContent);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
