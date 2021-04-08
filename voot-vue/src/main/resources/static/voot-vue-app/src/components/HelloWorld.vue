@@ -4,10 +4,12 @@
     <p>
       Voot: a handy Spring Boot application template with an unopinionated configurable Vue.js front end
     </p>
-    <p>Exactly what you were looking for!</p>
+    <p class="alert alert-info">Exactly what you were looking for!</p>
 
     <div>
-      <router-link to="/voot-vue/diag">Click here to see how Vue Router works</router-link>
+      <router-link to="/voot-vue/diag">
+        <button class="btn btn-success">Click here to see how Vue Router works</button>
+      </router-link>
     </div>
 
   </div>
