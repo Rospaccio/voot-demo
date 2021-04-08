@@ -1,5 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <h1>{{title}}</h1>
   <router-view />
 </template>
 
@@ -11,6 +12,11 @@ export default {
   components: {
     HelloWorld,
   },
+  data: function(){
+    return{
+      title: 'VOOT!'
+    }
+  }
 };
 </script>
 

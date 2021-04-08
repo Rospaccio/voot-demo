@@ -7,7 +7,7 @@
     <p>Exactly what you were looking for!</p>
 
     <div>
-      <router-link to="/diag">Click here to see how Vue Router works</router-link>
+      <router-link to="/voot-vue/diag">Click here to see how Vue Router works</router-link>
     </div>
 
   </div>

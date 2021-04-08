@@ -106,7 +106,7 @@
                         <resource>
                             <directory>src/resources/static</directory>
                             <excludes>
-                                <exclude>node_modules/**</exclude>
+                                <exclude>voot-vue-app/node_modules/**</exclude>
                             </excludes>
                         </resource>
                     </resources>

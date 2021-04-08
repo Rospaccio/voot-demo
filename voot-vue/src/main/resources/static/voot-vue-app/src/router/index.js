@@ -4,12 +4,12 @@ import Diagnostic from "../components/Diagnostic";
 
 const routes = [
     {
-        path: "/",
+        path: "/voot-vue",
         name: "HelloWorld",
         component: HelloWorld
     },
     {
-        path: "/diag",
+        path: "/voot-vue/diag",
         name :"Diagnostic",
         component: Diagnostic
     }
